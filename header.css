@@ -1,0 +1,104 @@
+header {
+  background-color: black;
+}
+
+header .headerwrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: 70px;
+  margin: 0 auto;
+
+  /* border: 1px solid red; */
+}
+
+header .headerwrapper img {
+  width: 85px;
+}
+
+header .headerwrapper nav ul {
+  display: flex;
+  gap: 15px;
+}
+
+header .headerwrapper nav ul li {
+  padding-inline: 10px;
+}
+
+header .headerwrapper nav ul li a {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+header .headerwrapper .off-screen-menu {
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  top: 70px;
+  position: fixed;
+  right: -100vw;
+  transition: all 0.5s ease-in-out;
+}
+
+header .headerwrapper .off-screen-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: center;
+}
+
+header .headerwrapper .off-screen-menu.active {
+  right: 0px;
+}
+
+header .headerwrapper .off-screen-menu ul li a {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+header .headerwrapper .hamburger {
+  display: none;
+}
+
+header .headerwrapper .icons {
+  color: white;
+  display: flex;
+  gap: 30px;
+}
+
+header .headerwrapper nav ul li a:hover,
+header .headerwrapper .icons i:hover,
+header .headerwrapper .off-screen-menu ul li a:hover {
+  color: var(--hover-color);
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+  header .headerwrapper nav ul {
+    gap: 0px;
+  }
+  header .headerwrapper .icons {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  header .headerwrapper nav {
+    display: none;
+  }
+
+  header .headerwrapper .off-screen-menu {
+    display: block;
+  }
+
+  header .headerwrapper .hamburger {
+    display: block;
+  }
+}

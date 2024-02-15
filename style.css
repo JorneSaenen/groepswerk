@@ -1,3 +1,12 @@
-h1 {
-  color: blue;
+:root {
+  --hover-color: #558af4;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
 }

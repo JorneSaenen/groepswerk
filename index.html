@@ -2,11 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/img/cinema-favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <script
+      src="https://kit.fontawesome.com/160e4c0d6b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Groepswerk</title>
   </head>
   <body>
+    <header>
+      <div class="headerwrapper">
+        <a href="/"><img src="./img/logo.png" alt="logo-home" /></a>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Film aanbod</a></li>
+            <li><a href="#">Snoepwinkel</a></li>
+            <li><a href="#">Over ons</a></li>
+          </ul>
+        </nav>
+        <div class="off-screen-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Film aanbod</a></li>
+            <li><a href="#">Snoepwinkel</a></li>
+            <li><a href="#">Over ons</a></li>
+          </ul>
+        </div>
+        <div class="hamburger">
+          <span class="bar bar1"></span>
+          <span class="bar bar2"></span>
+          <span class="bar bar3"></span>
+          <span class="bar bar4"></span>
+        </div>
+        <div class="icons">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </div>
+    </header>
     <main>
       <div class="bannertop">
         <div class="promo"><img src="#" alt="promotional movie banner" /></div>
@@ -29,5 +64,6 @@
       </div>
     </main>
     <script type="module" src="/main.js"></script>
+    <script type="module" src="/hamburger.js"></script>
   </body>
 </html>
