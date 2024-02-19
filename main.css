@@ -1,0 +1,33 @@
+main {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+}
+
+main > .bannertop {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+main > h1 {
+  font-weight: 600;
+  font-size: 32px;
+}
+main > .content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+main > .content > .bannerleft {
+}
+main > .content > .moviegrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+main > .content > .bannerright {
+}
