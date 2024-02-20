@@ -5,6 +5,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   font-family: "Inter", sans-serif;
+  text-align: center;
 }
 
 main > .bannertop {
@@ -15,6 +16,8 @@ main > .bannertop {
 main > h1 {
   font-weight: 600;
   font-size: 32px;
+  padding-top: 28px;
+  padding-bottom: 42px;
 }
 main > .content {
   display: grid;
@@ -23,10 +26,24 @@ main > .content {
 
 main > .content > .bannerleft {
 }
+
 main > .content > .moviegrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+}
+
+main > .content > .moviegrid > div {
+}
+
+main > .content > .moviegrid > div > .contentadvice {
+  display: flex;
+  justify-content: space-between;
+}
+
+main > .content > .moviegrid > div > img {
+  width: 172px;
+  height: 303px;
 }
 
 main > .content > .bannerright {
