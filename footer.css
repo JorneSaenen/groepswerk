@@ -17,3 +17,8 @@ footer {
 .icon i {
     margin: 0 10px;
 }
+
+footer .icon i:hover {
+  color: var(--hover-color);
+  transition: all 0.3s ease-in-out;
+}
