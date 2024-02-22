@@ -9,10 +9,48 @@ main {
 }
 
 main > .bannertop {
+  width: 100%;
   display: grid;
   grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr;
 }
 
+main > .bannertop > .promo > img {
+  object-fit: fill;
+  /* object-position: bottom center; */
+  height: 385px;
+  width: 100%;
+}
+main > .bannertop > .candyshop {
+  position: relative;
+}
+
+main > .bannertop > .candyshop > img {
+  object-fit: cover;
+  height: 385px;
+  width: 100%;
+}
+
+main > .bannertop > .candyshop > .btnsnoepwinkel {
+  color: white;
+  background-color: #6675f7;
+  padding: 2px 31px;
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: 40%;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  line-height: 14px;
+}
+
+main > .bannertop > .candyshop > .btnsnoepwinkel:hover {
+  color: #6675f7;
+  background-color: white;
+}
 main > h1 {
   font-weight: 600;
   font-size: 32px;
