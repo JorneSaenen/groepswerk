@@ -15,6 +15,7 @@ main > .bannertop {
   grid-template-rows: 1fr;
 }
 
+/* Best nooit vast hoogtes geven */
 main > .bannertop > .promo > img {
   object-fit: fill;
   /* object-position: bottom center; */
@@ -25,6 +26,7 @@ main > .bannertop > .candyshop {
   position: relative;
 }
 
+/* Best nooit vast hoogtes geven */
 main > .bannertop > .candyshop > img {
   object-fit: cover;
   height: 385px;
@@ -79,6 +81,7 @@ main > .content > .moviegrid > div > .contentadvice {
   justify-content: space-between;
 }
 
+/* Best nooit vast hoogtes geven */
 main > .content > .moviegrid > div > img {
   width: 172px;
   height: 303px;
