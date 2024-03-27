@@ -114,7 +114,7 @@ header .headerwrapper .off-screen-menu ul li a:hover {
   }
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 750px) {
   header .headerwrapper nav {
     display: none;
   }
