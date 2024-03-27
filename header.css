@@ -71,6 +71,7 @@ header .headerwrapper .icons {
   color: white;
   display: flex;
   gap: 30px;
+  cursor: pointer;
 }
 
 header .headerwrapper nav ul li a:hover,
