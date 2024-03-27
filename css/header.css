@@ -72,6 +72,30 @@ header .headerwrapper .icons {
   display: flex;
   gap: 30px;
   cursor: pointer;
+  position: relative;
+  padding-right: 10px;
+}
+
+.shopping-items {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 0, 0, 0.764);
+  color: white;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 800;
+  display: flex;
+  display: none;
+}
+
+.show-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: -12px;
+  right: 2px;
 }
 
 header .headerwrapper nav ul li a:hover,
