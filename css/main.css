@@ -1,0 +1,133 @@
+main {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+main > .bannertop {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+/* Best nooit vast hoogtes geven */
+main > .bannertop > .promo > img {
+  object-fit: fill;
+  /* object-position: bottom center; */
+  height: 385px;
+  width: 100%;
+}
+main > .bannertop > .candyshop {
+  position: relative;
+}
+
+/* Best nooit vast hoogtes geven */
+main > .bannertop > .candyshop > img {
+  object-fit: cover;
+  height: 385px;
+  width: 100%;
+}
+
+main > .bannertop > .candyshop > .btnsnoepwinkel {
+  color: white;
+  background-color: #6675f7;
+  padding: 2px 31px;
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: 40%;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  line-height: 14px;
+  transition: 0.3s;
+}
+
+main > .bannertop > .candyshop > .btnsnoepwinkel:hover {
+  color: #6675f7;
+  background-color: white;
+}
+main > h1 {
+  font-weight: 600;
+  font-size: 32px;
+  padding-top: 28px;
+  padding-bottom: 42px;
+}
+main > .content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+main > .content > .bannerleft {
+}
+
+main > .content > .moviegrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 35px;
+}
+
+main > .content > .moviegrid > div {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+main > .content > .moviegrid > div:hover {
+  transform: scale(1.3);
+}
+
+main > .content > .moviegrid > div > .contentadvice {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Best nooit vast hoogtes geven */
+main > .content > .moviegrid > div > img {
+  width: 172px;
+  height: 303px;
+}
+
+main > .content > .bannerright {
+}
+
+@media screen and (max-width: 1000px) {
+  main > .bannertop {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+  }
+  main > .bannertop > .candyshop > img {
+    height: none;
+    max-height: 120px;
+  }
+  main > .bannertop > .promo > img {
+    object-fit: cover;
+    object-position: center;
+    height: none;
+  }
+  main > .content > .moviegrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  main > .content > .moviegrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 466px) {
+  main > .content > .moviegrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}

@@ -16,17 +16,17 @@
         <a href="/"><img src="./img/logo.png" alt="logo-home" /></a>
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="#">Film aanbod</a></li>
-            <li><a href="#">Snoepwinkel</a></li>
+            <li><a href="/producten">Snoepwinkel</a></li>
             <li><a href="#">Over ons</a></li>
           </ul>
         </nav>
         <div class="off-screen-menu">
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="#">Film aanbod</a></li>
-            <li><a href="#">Snoepwinkel</a></li>
+            <li><a href="/producten">Snoepwinkel</a></li>
             <li><a href="#">Over ons</a></li>
           </ul>
         </div>
@@ -36,6 +36,7 @@
           <span class="bar bar3"></span>
           <span class="bar bar4"></span>
         </div>
+        <!-- In A steken en linken met /winkelmandje -->
         <div class="icons">
           <i class="fa-solid fa-magnifying-glass"></i>
           <i class="fa-solid fa-cart-shopping"></i>
@@ -44,8 +45,16 @@
     </header>
     <main>
       <div class="bannertop">
-        <div class="promo"><img src="#" alt="promotional movie banner" /></div>
-        <div class="candyshop"><img src="#" alt="candy shop" /></div>
+        <div class="promo">
+          <img
+            src="./public/img/avengers_ver21_xlg.jpg"
+            alt="promotional movie banner"
+          />
+        </div>
+        <div class="candyshop">
+          <img src="./public/img/snoep-cover.jpg" alt="candy shop" />
+          <div class="btnsnoepwinkel">Naar Snoep<br />Winkel</div>
+        </div>
       </div>
       <h1>Momenteel in de bioscoop</h1>
       <div class="content">
@@ -128,14 +137,15 @@
         <div class="bannerright"></div>
       </div>
     </main>
+    <script type="module" src="./js/global.js"></script>
     <script type="module" src="/main.js"></script>
-    <script type="module" src="/hamburger.js"></script>
-    <Footer>
+    <script type="module" src="./js/hamburger.js"></script>
+    <footer>
       <div class="icon">
         <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-instagram"></i>
       </div>
-    </Footer>
+    </footer>
   </body>
 </html>
